@@ -100,8 +100,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex items-start justify-center bg-gray-100 p-8">
       <div className="flex space-x-8 w-full max-w-5xl">
-        {/* Form Section */}
-        <div className="bg-white p-8 rounded-lg shadow-lg w-1/2 h-[630px] overflow-y-auto flex-shrink-0"> {/* Set a fixed height and enable scrolling */}
+        <div className="bg-white p-8 rounded-lg shadow-lg w-1/2 h-[630px] overflow-y-auto flex-shrink-0"> 
         <h1 className="text-2xl font-bold mb-4 text-center">Student Management</h1>
 
           <form onSubmit={editing ? updateStudent : addStudent} className="mb-4">
@@ -174,7 +173,6 @@ const App = () => {
           </form>
         </div>
 
-        {/* Student List Section */}
         <div className="bg-white p-8 rounded-lg shadow-lg w-full flex-grow"> {/* List grows, but form stays fixed */}
           <h2 className="text-xl font-bold mb-4 text-center">Students List</h2>
           <ul>
